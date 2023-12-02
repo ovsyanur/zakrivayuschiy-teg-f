@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --basic-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P';
+  --basic-text-weight: 400;
+  --card-title-weight: 700;
+  --bg-color: #fff;
+  --content-color: #000;
+  --bg-image:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --block-inline-size: clamp(375px, 23.125rem + 22.9167vw, 700px);
+  --header-padding:
+    clamp(120px, 7rem + 1.6667vw, 136px)
+    clamp(14px, -2.4375rem + 11.0417vw, 120px)
+    25px;
+  --card-title-padding: 5px 24px 4px 10px;
+  --tag-outline-color: var(--bg-color);
+  --btn-text-color: #fff;
+  --heart-base-color: #000;
+  --heart-accent-color: #ff0000;
+}
+
+@media (width <= 480px) {
+  .page {
+    --block-inline-size: 100%;
+    --card-title-padding: 4.5px 10px 3.5px 10px;
+  }
+}
