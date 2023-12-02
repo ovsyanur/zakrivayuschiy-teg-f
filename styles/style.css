@@ -58,6 +58,7 @@
 .dialog__button {
   inline-size: 100%;
   block-size: 38px;
+  text-transform: uppercase;
 }
 
 .dialog__message {
@@ -75,7 +76,7 @@
 
 .dialog__message-text {
   inline-size: 234px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 1.5;
   color: var(--btn-text-color);
@@ -90,7 +91,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   background-color: var(--bg-color);
   border: 2px solid var(--content-color);
@@ -238,7 +239,7 @@
   mix-blend-mode: hard-light;
   color: var(--content-color);
   opacity: 0.5;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-shadow:
     -1px 0 0 var(--tag-outline-color), 
@@ -307,55 +308,11 @@
   opacity: 0;
 }
 
-.like-icon:hover .main-body {
-  fill: var(--heart-base-color);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-base-color);
-  transition: fill 0.3s;
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-accent-color);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon:active .core {
-  fill: var(--heart-accent-color);
-  transition: fill 0.3s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-accent-color);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon.is-liked .heart {
-  animation: scaling 0.3s 0.1s ease-in alternate;
-}
-
-.like-icon.is-liked .sparks {
-  opacity: 0;
-  animation: sparkling 0.3s 0.3s ease-in alternate;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-accent-color);
-  transition: fill 0.3s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-accent-color);
-  transition: fill 0.3s 0.06s;
-}
-
 .button {
   position: relative;
   overflow: hidden;
   border: 2px solid var(--content-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 0.9;
   background: var(--bg-color);
@@ -449,7 +406,7 @@
   }
 
   .footer__floppy-icon {
-    width: 28px;
+    inline-size: 28px;
     block-size: 28px;
   }
 }
